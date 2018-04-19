@@ -12,7 +12,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
+#checkupdates,
 #import-geonames-form table {
   text-align: left;
   line-height: 40px;
@@ -23,27 +23,32 @@ body {
   border-radius: .25rem;
 }
 
-
-
+#checkupdates thead tr:first-child,
 #import-geonames-form thead tr:first-child {
   background: #5F4B8B;
   color: #fff;
   border: none;
 	
 }
+#checkupdates th:first-child,
 #import-geonames-form th:first-child {
 	padding: 0 10px;
 }
+ 
+#checkupdates td,
 #import-geonames-form td {
   padding: 8px 15px 8px 20px;
 }
+
+#checkupdates tbody td,
 #import-geonames-form tbody td {
   border-bottom: 1px solid #ddd;
 }
+#checkupdates tbody tr:last-child td,
 #import-geonames-form tbody tr:last-child td {
   border: none;
 }
-
+#checkupdates td:last-child,
 #import-geonames-form td:last-child {
   padding-left: 6px;
 line-height: 1.618;

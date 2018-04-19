@@ -62,7 +62,9 @@ $complete = '<span class="okay">&#x2713; Complete</span>';
 			array('checkupdate','cities_updates.txt','Check For Updates','Check allCountries.txt for updates.')
 		);
 
-		foreach($function_controls as $v) {
+		$build_controls = array_slice($function_controls, 0, 3);
+
+		foreach($build_controls as $v) {
 			?>
 			<tr>
 				<td id="<?php echo $v[0]; ?>-control">
@@ -93,6 +95,41 @@ $complete = '<span class="okay">&#x2713; Complete</span>';
 	</table>
 	
 </form>
+
+<table id="checkupdates">
+		<thead>
+			<tr>
+				<th colspan="3">Check for updates</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<?php
+				$updates_control = $function_controls[3];
+
+				?>
+				<td id="<?php echo $updates_control[0]; ?>-control">
+
+					<?php 
+					// if the completion file for this task exists, show 'Complete' instead of button.
+					if (file_exists($dir . '/' . $updates_control[1])) {
+						echo $complete;
+					} else {
+						?>
+						<button id="<?php echo $updates_control[0]; ?>" class="cd-button" name="<?php echo $updates_control[0]; ?>" value="<?php echo $updates_control[0]; ?>"><?php echo $updates_control[2]; ?> <span id="<?php echo $updates_control[0]; ?>-spinner" class="loading-spinner"></span></button>
+						<?php	
+					}
+					?>
+
+				</td>
+
+				<td>
+					<span id="<?php echo $updates_control[0]; ?>-label"><?php echo $updates_control[3]; ?></span>
+				</td>
+			</tr>
+		</tbody>
+</table>
+
 
 </div>
 
