@@ -269,16 +269,6 @@ if (false === $handle) {
 	}
 
 }
-
-
-
-
-
-
-
-// 	}
-
-// }
 set_time_limit(30);// restore to default
 ini_set('memory_limit','128M');// restore to default
 echo json_encode(array("status" => $status,"message" => $msg));
