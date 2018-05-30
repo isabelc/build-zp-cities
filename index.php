@@ -32,7 +32,7 @@
 <body>
 <div id="main">
 <h1>ZodiacPress <code>cities.txt</code> Builder</h1>
-<p>This is a toolkit to build the <code>cities.txt</code> data file (which is available <a href="https://download.cosmicplugins.com/" target="_blank">here</a>). The <code>cities.txt</code> file is created from data that is taken from GeoNames export files, and modifed/optimized for use with ZodiacPress.</p>
+<p>This is a toolkit to build the <code>cities.txt</code> data file (which is available <a href="https://storage.googleapis.com/zodiacpress_cities/cities.txt" target="_blank">here</a>). The <code>cities.txt</code> file is created from data that is taken from GeoNames export files, and modifed/optimized for use with ZodiacPress.</p>
 
 <div id="working"></div>
 <div id="notices"></div>

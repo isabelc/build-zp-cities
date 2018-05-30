@@ -16,7 +16,7 @@ include_once '../includes.php';
 
 // get last modified time of cities.txt file.
 // Will use that as baseline date to check allCountries.txt modified dates against.
-$url = 'https://download.cosmicplugins.com/cities.txt';
+$url = 'https://storage.googleapis.com/zodiacpress_cities/cities.txt';
 $h = get_headers($url, 1);
 $dt = NULL;
 if (!(!$h || strstr($h[0], '200') === FALSE)) {
